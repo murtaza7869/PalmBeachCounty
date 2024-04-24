@@ -15,3 +15,4 @@ $wc = new-object System.Net.WebClient
 $wc.DownloadFile($url, $output)
 #Start-Process "regedit.exe" "/s '"C:\SysAdmin\InstallMU.reg"'" -NoNewWindow -Wait
 Start-Process -filepath "$env:windir\regedit.exe" -Argumentlist @("/s", "`"C:\SysAdmin\InstallMU.reg`"")
+gpupdate /force
